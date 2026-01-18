@@ -99,10 +99,22 @@
         🌅 Morning Routine
         <div class="muted">~5–7 minutes</div>
       </div>
+
+      <div class="btn btn--accent" data-open="new_morning">
+        🌅 New Morning – Rib/Thoracic Reset
+        <div class="muted">10–12 minutes<br/>No forcing cracks/pops; keep everything pain-free</div>
+      </div>
+
       <div class="btn btn--blue" data-open="night">
         🌙 Night Strength
         <div class="muted">Pull-ups • Dips • Split Squats • Plank • 10-min Run</div>
       </div>
+
+      <div class="btn btn--blue" data-open="new_strength">
+        💪 New Strength – Balanced Full Body
+        <div class="muted">20–30 minutes<br/>Avoid twisting; keep reps controlled; reduce range if rib pain</div>
+      </div>
+
       <div class="btn btn--gold" data-open="reset">
         🦴 Collarbone / Scapula Reset
         <div class="muted">Un-shrug • Serratus Reach • Neck Glide</div>
@@ -178,6 +190,16 @@ const ROUTINES = {
       {name:"Mountain Climbers", type:"time", seconds:30, note:"Rhythmical; keep core tight."},
     ]
   },
+  new_morning: {
+    title: "🌅 New Morning – Rib/Thoracic Reset",
+    items: [
+      {name:"Supine breathing – left ribs expand", type:"time", seconds:120, note:"Left hand on left ribs, slow nasal inhale, long exhale"},
+      {name:"Thoracic rotation (knees drop left)", type:"reps", reps:"6–8", note:"Stop before sharp rib sensation"},
+      {name:"Cat–cow (slow)", type:"time", seconds:120, note:"Spread ribs on inhale"},
+      {name:"Left side plank (quality)", type:"reps", reps:"3 × 10–20s", note:"Hold each set 10–20s; quality over quantity"},
+      {name:"Right lat stretch", type:"time", seconds:90, note:"Gentle side bend left, no aggressive pulling"}
+    ]
+  },
   night: {
     title: "🌙 Night Strength",
     items: [
@@ -186,6 +208,16 @@ const ROUTINES = {
       {name:"Bulgarian Split Squats", type:"reps", reps:"3 × 8–10 / leg", note:"Knee tracks over toes; stay tall."},
       {name:"Plank", type:"time", seconds:40, note:"Optional add side plank on last 10s."},
       {name:"Run", type:"time", seconds:600, note:"10 minutes easy; nasal breathing if possible."}
+    ]
+  },
+  new_strength: {
+    title: "💪 New Strength – Balanced Full Body",
+    items: [
+      {name:"Bulgarian split squat (LEFT leg forward)", type:"reps", reps:"3 × 6–8", note:"Slow down, pause, torso square"},
+      {name:"Hamstring machine (LEFT emphasis)", type:"reps", reps:"3 × 10–12", note:"Control both directions"},
+      {name:"Chin-ups (controlled)", type:"reps", reps:"3 × 3–5", note:"No dead hang stretch; stop just before bottom; even shoulders"},
+      {name:"DB floor press (neutral grip)", type:"reps", reps:"3 × 8–10", note:"Control tempo; full range as tolerated"},
+      {name:"Suitcase carry (LEFT hand)", type:"reps", reps:"3 × 20–30s", note:"Walk tall, no leaning"}
     ]
   },
   reset: {
